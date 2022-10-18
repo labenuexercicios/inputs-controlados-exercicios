@@ -17,7 +17,9 @@ Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste r
 
 # Exercício 1
 
-Primeiro, vamos analisar todo o código que vocês estão recebendo. 
+Primeiro, vamos analisar todo o código que vocês estão recebendo.
+
+Você **não precisa** responder às questões abaixo dentro de seu projeto, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
 
 - Observe o `App.js`, o que você consegue visualizar que já conhece? 
 - Entende o `<GlobalStyles/>`?
