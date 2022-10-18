@@ -53,11 +53,11 @@ const ConfirmationForm = () => {
     {formFlow === 1? <Form>
       <label>
         Data Nascimento:
-        <Input value={born} onChange = {imutBorn}/>
+        <Input type='date' value={born} onChange = {imutBorn}/>
       </label>
       <label>
         Telefone:
-        <Input type='number' value={phone} onChange = {imutPhone}/>
+        <Input placeholder='(xx)xxxxx-xxxx' type='tel' value={phone} onChange = {imutPhone}/>
       </label>  
 
       <label>
