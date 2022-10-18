@@ -13,11 +13,13 @@ Para executar este exercício, você pode criar uma nova aplicação React, util
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
-# **Observação: A aplicação não vai funcionar até você finalizar o exercício 2!**
+# **Observação: A aplicação não vai funcionar até você finalizar a passagem de props no exercício 2!**
 
 # Exercício 1
 
-Primeiro, vamos analisar todo o código que vocês estão recebendo. 
+Primeiro, vamos analisar todo o código que vocês estão recebendo.
+
+Você **não precisa** responder às questões abaixo dentro de seu projeto, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
 
 - Observe o `App.js`, o que você consegue visualizar que já conhece? 
 - Entende o `<GlobalStyles/>`?
@@ -25,7 +27,7 @@ Primeiro, vamos analisar todo o código que vocês estão recebendo.
 
 - Agora analize o `JSX` de cada um desses componentes.
 - Você vai perceber que o componente `MainPage` é o componente principal do projeto. É lá onde está armazenado os componentes `NameForm` e `ConfirmationForm`. 
-- Foi criada uma lógica de renderização na linha 39 que vai ser usada por você nos próximos exercícios. Você não precisa entender 100% como ela funciona por enquanto.
+- Foi criada uma lógica de renderização na linha 30 do componente `MainPage` que vai ser usada por você nos próximos exercícios. Você não precisa entender 100% como ela funciona por enquanto nem fazer nada para que ela funcione.
 - Agora analize o componente `NameForm`. Ele é uma versão componentizada do exercício de hoje de manhã durante a aula. Perceba que, agora, ele precisa receber `props` para funcionar corretamente.
 - O componente `ConfirmationForm` está incompleto. Seu trabalho será criar esse componente e administrar o controle dos inputs que serão pedidos a seguir.
 
@@ -52,10 +54,10 @@ Para este formulário você vai precisar:
 
 - Criar um input onde seja possível inserir a data de nascimento da pessoa.
 - Criar um input onde seja possível inserir o número de telefone da pessoa.
-- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**.
+- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**. (Pode dar uma olhada aqui no conteúdo selecionado: (https://reactjs.org/docs/forms.html#the-select-tag:~:text=In%20HTML%2C%20%3Cselect,one%20place.%20For%20example%3A)
 - Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.
-- Criar 2 inputs do tipo `radio` onde a pessoa possa escolher apenas uma opção entre as duas: Curso integral web fullstack ou Curso noturno web fullstack
-- Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades.
+- Criar 2 inputs do tipo `radio` onde a pessoa possa escolher apenas uma opção entre as duas: Curso integral web fullstack ou Curso noturno web fullstack (pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_radio.asp)
+- Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades. (Pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_checkbox.asp)
 
 
 Quando tudo estiver finalizado, crie uma função de `onClick` no botão `Enviar dados` do componente `ConfirmationForm` que limpa os inputs e confirma para o usuário através de um `alert()` que a inscrição foi finalizada. Isso só pode acontecer se todos os campos forem preenchidos.
