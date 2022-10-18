@@ -13,7 +13,7 @@ Para executar este exercício, você pode criar uma nova aplicação React, util
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
-# **Observação: A aplicação não vai funcionar até você finalizar o exercício 2!**
+# **Observação: A aplicação não vai funcionar até você finalizar a passagem de props no exercício 2!**
 
 # Exercício 1
 
