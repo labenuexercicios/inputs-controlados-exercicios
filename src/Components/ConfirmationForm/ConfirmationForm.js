@@ -42,7 +42,8 @@ const ConfirmationForm = () => {
     }else if(rad1.checked === false && rad2.checked === false){
       alert('Insira as Informações!')
     }else{
-      setFormFlow(2) 
+      setFormFlow(2);
+      alert('Inscrição Efetuada :)') 
     }
   }
 
