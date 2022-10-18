@@ -17,7 +17,20 @@ const NameForm = (props) => {
     {id:"CADÊ O BANHEIRO DOS NÃO BINÁRIO??", name:"Não Binário"},
     {id:"sem definção", name:"sem definição"}
   ]
-  
+  const [selectEtnia, setSelectEtnia] = useState("")
+  const etnia = [
+    {id:"Branca", name:'Branca'},
+    {id:'Preta', name:'Preta'},
+    {id:'Amarela', name:'Amarela'},
+    {id:'Originária', name:'Originária'},
+  ]
+  const [selectCurso, setSelectCurso] = useState("")
+  const curso = [
+    {id:"INTEGRAL", name:"INTEGRAL"},
+    {id:"NOTURNO", name:"NOTURNO"}
+  ]
+
+
   function onChangeName(event){
     setName(event.target.value)
     console.log(event.target.value)
@@ -50,7 +63,9 @@ const NameForm = (props) => {
       email1: email1,
       telefone: telefone,
       data: date,
-      gênero: selectValue
+      gênero: selectValue,
+      etnia: selectEtnia,
+      curso: selectCurso,
     }
     if (Dados.name.length <= 10 || Dados.name.length >= 30 ) {
       console.log("numero gigante ou pequeno demais")
@@ -59,6 +74,12 @@ const NameForm = (props) => {
       setAge("");
       setEmail("");
       setEmail1("");
+      setAge("")
+      setDate("")
+      setTelefone("")
+      setSelectValue(1)
+      setSelectCurso(1)
+      setSelectEtnia(1)
     } if (Dados.age < 18 ) {
       console.log("você é menor de idade")
       alert("você é menor de idade rapaz! VAZA")
@@ -66,12 +87,24 @@ const NameForm = (props) => {
       setAge("");
       setEmail("");
       setEmail1("");
+      setAge("")
+      setDate("")
+      setTelefone("")
+      setSelectValue(1)
+      setSelectCurso(1)
+      setSelectEtnia(1)
     } if (Dados.email !== Dados.email1) {
       alert("Os emails não são iguais")
       setName("");
       setAge("");
       setEmail("");
       setEmail1("");
+      setAge("")
+      setDate("")
+      setTelefone("")
+      setSelectValue(1)
+      setSelectCurso(1)
+      setSelectEtnia(1)
     } else {
       alert(`Dados cadastrados ${Dados.name}`)
       setName("");
@@ -82,6 +115,8 @@ const NameForm = (props) => {
       setDate("")
       setTelefone("")
       setSelectValue(1)
+      setSelectCurso(1)
+      setSelectEtnia(1)
       console.log(Dados)
     }
   }
@@ -115,6 +150,22 @@ const NameForm = (props) => {
           Gênero:
           <select value={selectValue} onChange={e => setSelectValue(e.target.value)}>
         {list.map((item, index) => (
+          <option value={item.id}>{item.name}</option>
+        ))}
+          </select>
+        </label>
+        <label>
+          Etnia:
+          <select value={selectEtnia} onChange={e => setSelectEtnia(e.target.value)}>
+        {etnia.map((item, index) => (
+          <option value={item.id}>{item.name}</option>
+        ))}
+          </select>
+        </label>
+        <label >
+          Curso:
+        <select value={selectCurso} onChange={e => setSelectCurso(e.target.value)}>
+        {curso.map((item, index) => (
           <option value={item.id}>{item.name}</option>
         ))}
           </select>
