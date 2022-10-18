@@ -52,7 +52,7 @@ Para este formulário você vai precisar:
 
 - Criar um input onde seja possível inserir a data de nascimento da pessoa.
 - Criar um input onde seja possível inserir o número de telefone da pessoa.
-- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**.
+- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**. (Pode dar uma olhada aqui: (https://reactjs.org/docs/forms.html#the-select-tag)
 - Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.
 - Criar 2 inputs do tipo `radio` onde a pessoa possa escolher apenas uma opção entre as duas: Curso integral web fullstack ou Curso noturno web fullstack (pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_radio.asp)
 - Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades. (Pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_checkbox.asp)
