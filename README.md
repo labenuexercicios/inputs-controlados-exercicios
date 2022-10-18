@@ -41,7 +41,7 @@ O seu trabalho agora é garantir que o usuário está inserindo corretamente as 
 - A pessoa estudante só pode se inscrever na Labenu se for maior de idade
 - O input de nome precisa ter no mínimo 10 caracteres e no máximo 30.
 - Verifique se o e-mail está no formato correto: usuario@usuario.com
-- Crie um novo input de confirmação de email. Caso os dois inputs estejam com conteúdo iguais, o usuário pode seguir pra próxima etapa. 
+- Caso os dois inputs de email estejam com conteúdo iguais, o usuário pode seguir pra próxima etapa. 
 - Todos os campos são obrigatórios.
 
 Atenção: A lógica de avançar para a próxima etapa do formulário deve funcionar apenas SE todos os requisitos forem atendidos. Caso contrário, uma mensagem de `alert()` deve aparecer para o usuário indicando que ele não respondeu o formulário corretamente.
