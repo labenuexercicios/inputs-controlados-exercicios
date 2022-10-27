@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Input} from '../MainPage/styles'
 
 const NameForm = (props) => {
+  const { handleKeyDown, name, age, email, onChangeName, onChangeAge, onChangeEmail, sendData, emailValidation, onChangeEmailValidation} = props
   return (
     <Form>
         <label>
@@ -10,7 +11,7 @@ const NameForm = (props) => {
         </label>
         <label>
           Idade:
-          <Input  placeholder="Idade" value={age} onChange={onChangeAge}/>
+          <Input placeholder="Idade" value={age} onChange={onChangeAge}/>
         </label>
         <label>
           E-mail:
@@ -18,9 +19,9 @@ const NameForm = (props) => {
         </label>
         <label>
           Confirmação de e-mail:
-          <Input  placeholder="usuario@usuario.com" value={email} onChange={onChangeEmail}/>
+          <Input  placeholder="usuario@usuario.com" value={emailValidation} onChange={onChangeEmailValidation}/>
         </label>
-      <button onClick={sendData}>Enviar dados</button>
+      <button onKeyDown={handleKeyDown} onClick={sendData}>Enviar dados</button>
       </Form>
   )
 }
