@@ -28,13 +28,13 @@ Você **não precisa** responder às questões abaixo dentro de seu projeto, mas
 - Agora analize o `JSX` de cada um desses componentes.
 - Você vai perceber que o componente `MainPage` é o componente principal do projeto. É lá onde está armazenado os componentes `NameForm` e `ConfirmationForm`. 
 - Foi criada uma lógica de renderização na linha 30 do componente `MainPage` que vai ser usada por você nos próximos exercícios. Você não precisa entender 100% como ela funciona por enquanto nem fazer nada para que ela funcione.
-- Agora analize o componente `NameForm`. Ele é uma versão componentizada do exercício de hoje de manhã durante a aula. Perceba que, agora, ele precisa receber `props` para funcionar corretamente.
+- Agora analize o componente `NameForm`. Ele é uma versão componentizada do exercício da aula ao vivo. Perceba que, agora, ele precisa receber `props` para funcionar corretamente.
 - O componente `ConfirmationForm` está incompleto. Seu trabalho será criar esse componente e administrar o controle dos inputs que serão pedidos a seguir.
 
 
 # Exercício 2
 
-Agora vamos incrementar o formulário que trabalhamos hoje de manhã, que agora é o componente `NameForm`, com uma prática muito comum no desenvolvimento Front-end: **verificações**. 
+Agora vamos incrementar o formulário que trabalhamos em aula, que agora é o componente `NameForm`, com uma prática muito comum no desenvolvimento Front-end: **verificações**. 
 ## **Antes disso, passe as props corretamente do componente `MainPage.js` para o componente `NameForm.js`, caso contrário, a aplicação não vai funcionar!**
 O seu trabalho agora é garantir que o usuário está inserindo corretamente as informações que você precisa. Para isso, siga os seguintes passos e requisitos:
 
