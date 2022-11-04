@@ -19,7 +19,7 @@ Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste r
 
 Primeiro, vamos analisar todo o código que vocês estão recebendo.
 
-Você **não precisa** responder às questões abaixo dentro de seu projeto, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
+Você **não precisa responder às questões abaixo dentro de seu projeto**, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
 
 - Observe o `App.js`, o que você consegue visualizar que já conhece? 
 - Entende o `<GlobalStyles/>`?
@@ -36,6 +36,7 @@ Você **não precisa** responder às questões abaixo dentro de seu projeto, mas
 
 Agora vamos incrementar o formulário que trabalhamos em aula, que agora é o componente `NameForm`, com uma prática muito comum no desenvolvimento Front-end: **verificações**. 
 ## **Antes disso, passe as props corretamente do componente `MainPage.js` para o componente `NameForm.js`, caso contrário, a aplicação não vai funcionar!**
+
 O seu trabalho agora é garantir que o usuário está inserindo corretamente as informações que você precisa. Para isso, siga os seguintes passos e requisitos:
 
 - A pessoa estudante só pode se inscrever na Labenu se for maior de idade
@@ -54,12 +55,10 @@ Para este formulário você vai precisar:
 
 - Criar um input onde seja possível inserir a data de nascimento da pessoa.
 - Criar um input onde seja possível inserir o número de telefone da pessoa.
-- Criar um input do tipo dropdown onde a pessoa possa escolher um gênero entre as seguintes opções: **Homem cisgênero, Mulher cisgênero, Homem trans, Mulher trans, Pessoa não binária, Prefiro não dizer**. (Pode dar uma olhada aqui no conteúdo selecionado: (https://reactjs.org/docs/forms.html#the-select-tag:~:text=In%20HTML%2C%20%3Cselect,one%20place.%20For%20example%3A)
-- Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.
-- Criar 2 inputs do tipo `radio` onde a pessoa possa escolher apenas uma opção entre as duas: Curso integral web fullstack ou Curso noturno web fullstack (pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_radio.asp)
+- Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: **Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.** (Pode dar uma olhada aqui no conteúdo selecionado: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 - Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades. (Pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_checkbox.asp)
 
 
-Quando tudo estiver finalizado, crie uma função de `onClick` no botão `Enviar dados` do componente `ConfirmationForm` que limpa os inputs e confirma para o usuário através de um `alert()` que a inscrição foi finalizada. Isso só pode acontecer se todos os campos forem preenchidos.
+Quando tudo estiver finalizado, crie uma função de `onClick` no botão `Enviar dados` do componente `ConfirmationForm` que verifica se tosos os campos foram preenchidos e limpa os inputs e confirma para o usuário através de um `alert()` que a inscrição foi finalizada.
 
-Atenção: Só deve ser possível selecionar uma única opção nos inputs de drowdown para gênero e autodeclaração de cor.
+Atenção: Só deve ser possível selecionar uma única opção nos inputs de drowdown para a autodeclaração de cor.
