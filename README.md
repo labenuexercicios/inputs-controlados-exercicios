@@ -56,7 +56,6 @@ Para este formulário você vai precisar:
 - Criar um input onde seja possível inserir a data de nascimento da pessoa.
 - Criar um input onde seja possível inserir o número de telefone da pessoa.
 - Criar um input do tipo dropdown onde a pessoa possa escolher como se autodeclara: **Negro, branco, pardo, amarelo, indígena ou prefiro não dizer.** (Pode dar uma olhada aqui no conteúdo selecionado: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
-- Criar 2 inputs do tipo `checkbox` onde a pessoa confirma que: Tem ensino médio completo e Tem disponibilidade para participar das atividades. (Pode dar uma olhada aqui: https://www.w3schools.com/tags/att_input_type_checkbox.asp)
 
 
 Quando tudo estiver finalizado, crie uma função de `onClick` no botão `Enviar dados` do componente `ConfirmationForm` que verifica se tosos os campos foram preenchidos e limpa os inputs e confirma para o usuário através de um `alert()` que a inscrição foi finalizada.
