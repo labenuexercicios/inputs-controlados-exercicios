@@ -21,16 +21,12 @@ const onChangeEmail = (event) => {
   setEmail(event.target.value)
 }
 
-const sendData = () => {
-  //aqui deve vir uma verificação para mudar de formulario apenas se todos os requisitos tiverem sido cumpridos
-  setFormFlow(2)
-}
-  return (
+return (
     <MainContainer>
       <h2>Formulário de inscrição</h2>
       {formFlow === 1 ? <NameForm
       // insira aqui suas props
-      /> : <ConfirmationForm />}
+      /> : <ConfirmationForm/>}
     </MainContainer>
   )
 }
