@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 `
 const Container = styled.div`
@@ -18,12 +19,16 @@ const Container = styled.div`
 function App() {
   return (
     <>
+
     <GlobalStyles/>
     <Container>
+
       <Header/>
       <MainPage/>
       <Footer/>
+
     </Container>
+    
     </>
   );
 }

@@ -20,3 +20,11 @@ export const Input = styled.input`
     width: 100%;
     padding: 8px;
 `
+export const Label = styled.label `
+    display: flex;
+    flex-direction: row;
+`
+export const Input2 = styled.input`
+    width: 20%;
+    padding: 8px;
+`
