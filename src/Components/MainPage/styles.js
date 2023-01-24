@@ -17,6 +17,13 @@ export const Form = styled.div`
 `
 
 export const Input = styled.input`
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 8px;
+`
+
+export const Select = styled.select`
+    border: 1px solid black;
     width: 100%;
     padding: 8px;
 `
