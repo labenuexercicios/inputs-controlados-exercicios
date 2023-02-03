@@ -43,8 +43,8 @@ const MainPage = () => {
           nome={nome}
           idade={idade}
           email={email}
-          onChangeName={onChangeNome}
-          onChangeAge={onChangeIdade}
+          onChangeNome={onChangeNome}
+          onChangeIdade={onChangeIdade}
           onChangeEmail={onChangeEmail}
           sendData={sendData}
         />
