@@ -9,7 +9,7 @@ Para o exercício de hoje, vamos utilizar um template! Dentro desse template voc
 
 Para executar este exercício, você pode criar uma nova aplicação React, utilizar o **CodeSandbox** ou usar este template do repositório.
 - Caso use este template, lembre-se de dar um `npm install` assim que baixar! 
-- Caso estiver usando o codeSandBox, pode usar esse template aqui: https://codesandbox.io/s/exercicios-inputs-controlados-ns0df5?file=/src
+- Caso estiver usando o codeSandBox, pode usar esse template aqui: https://codesandbox.io/s/inputs-controlados-exercicio-jr2720
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
