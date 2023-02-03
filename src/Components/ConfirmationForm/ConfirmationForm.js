@@ -1,13 +1,15 @@
-import React from 'react'
-import { Form} from '../MainPage/styles'
+import React from "react";
+import { Form } from "../MainPage/styles";
 
-const ConfirmationForm = () => {
+const ConfirmationForm = (props) => {
   return (
     <Form>
-        
-      <button>Enviar dados</button>
-      </Form>
-  )
-}
+      <input placeholder="Data de nascimento"/>
+      <input placeholder="Telefone"/>
+      <input placeholder="Cidade"/>
+      <button onClick={props.sendForm}>Enviar dados</button>
+    </Form>
+  );
+};
 
-export default ConfirmationForm
+export default ConfirmationForm;
