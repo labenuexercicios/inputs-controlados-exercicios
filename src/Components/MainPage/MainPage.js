@@ -5,18 +5,19 @@ import ConfirmationForm from "../ConfirmationForm/ConfirmationForm";
 import ConfirmationPage from "../ConfirmationPage/ConfirmationPage";
 
 const MainPage = () => {
+  const [data, setData] = useState({});
   const [formFlow, setFormFlow] = useState(1); //você não precisa mexer neste estado, ele faz parte da lógica da linha 30 do JSX
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
+  const [nome, setNome] = useState("");
+  const [idade, setIdade] = useState("");
   const [email, setEmail] = useState("");
-  //3.1 crie aqui os estados para o form do exercício 3
+  //3.1 crie aqui os estados dataNascimento, telefone e cidade para o exercício 3
 
-  const onChangeName = (event) => {
-    setName(event.target.value);
+  const onChangeNome = (event) => {
+    setNome(event.target.value);
   };
 
-  const onChangeAge = (event) => {
-    setAge(event.target.value);
+  const onChangeIdade = (event) => {
+    setIdade(event.target.value);
   };
 
   const onChangeEmail = (event) => {
@@ -27,22 +28,24 @@ const MainPage = () => {
 
   const sendData = () => {
     setFormFlow(2);
+    setData({ ...data, nome, idade, email })
   };
 
   const sendForm = () => {
     setFormFlow(3);
+    setData({ ...data, dataNascimento, telefone, cidade })
   };
 
   const mudarPagina = () => {
     if (formFlow === 1) {
       return (
         <NameForm
-          name={name}
-          age={age}
+          nome={nome}
+          idade={idade}
           email={email}
-          onChangeName={onChangeName}
+          onChangeName={onChangeNome}
+          onChangeAge={onChangeIdade}
           onChangeEmail={onChangeEmail}
-          onChangeAge={onChangeAge}
           sendData={sendData}
         />
       );

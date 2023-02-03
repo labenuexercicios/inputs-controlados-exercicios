@@ -47,3 +47,4 @@ Agora que os requisitos da etapa anterior foram atendidos, você precisa control
 - Passe os estados e funções por props para o componente `ConfirmationForm`.
 - Abra o componente `ConfirmationForm.js`.
 - Aplique os valores recebidos por props para cada input (`value`e `onChange`).
+- Agora você pode testar a aplicação até o final e verificar os dados que foram capturados pelos inputs controlados nos 2 formulários! 😀
