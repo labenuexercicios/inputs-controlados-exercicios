@@ -9,14 +9,15 @@ const ContainerData = styled.div`
   gap: 5px;
 `;
 
-const ConfirmationPage = ({ data }) => {
+const ConfirmationPage = ({data}) => {
+  console.log(data)
   return (
     <div>
       <h1>Inscrição confirmada!</h1>
       <ContainerData>
         <h3>Dados enviados</h3>
-        <p>Nome: {data.name}</p>
-        <p>Idade: {data.age}</p>
+        <p>Nome: {data.nome}</p>
+        <p>Idade: {data.idade}</p>
         <p>E-mail: {data.email}</p>
         <p>Data de Nascimento: {data.dataNascimento}</p>
         <p>Telefone: {data.telefone}</p>
