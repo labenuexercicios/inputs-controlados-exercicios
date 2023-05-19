@@ -26,7 +26,7 @@ O cartão poderá ser registrado no Formulário LabeCard. Basta fornecer os deta
 
 No template deverá ter um código html com estilização semelhante a imagem abaixo:
 ![image](https://github.com/labenuexercicios/inputs-controlados-exercicios/assets/71137294/50b7828d-3f6e-43b6-93d1-bd1fab53973a)
-Você deverá implementar o formulário.
+#### Você deverá implementar o formulário.
 
 # Exercício 1
 Crie um input para cada informação do cartão: forma de pagamento, nome da pessoa, número do cartão, data de validade e CVC.
