@@ -4,47 +4,31 @@ Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://
 
 
 ## Como eu vou executar os exercícios?
-Para o exercício de hoje, vamos utilizar um template! Dentro desse template vocês vão encontrar uma estrutura para trabalharmos com diferentes tipos de input! :) 
+Para o exercício de hoje, vamos utilizar um template! Dentro desse template vocês vão encontrar uma estrutura para trabalharmos.
 
-
-Para executar este exercício, você pode criar uma nova aplicação React, utilizar o **CodeSandbox** ou usar este template do repositório.
+Para executar este exercício, você pode utilizar o **CodeSandbox** ou usar este template do repositório.
 - Caso use este template, lembre-se de dar um `npm install` assim que baixar! 
-- Caso estiver usando o codeSandBox, pode usar esse template aqui: https://codesandbox.io/s/inputs-controlados-exercicios-b8ejl1
+- Caso estiver usando o codeSandBox, pode usar esse template aqui: https://codesandbox.io/s/exercicio-inputs-controlados-0523-i51by9?file=/src/App.js
 
 Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
-# **Observação: A aplicação não vai funcionar até você finalizar o exercício 2!**
+
+# Formulário LabeCard 
+
+O **Formulário LabeCard** será uma  plataforma dedicada a facilitar o processo de registro do do cartão de crédito ou débito de estudantes para realizar compras de cursos na renomada instituição de ensino, Labenu. Com uma interface intuitiva e segura, a plataforma deve oferecer uma experiência tranquila e conveniente. Por enquanto só temos o design deste projeto e precisamos de você para implementar o formulário.
+
+
+**Veja como deve funcionar o registro do cartão:**
+
+O cartão poderá ser registrado no Formulário LabeCard. Basta fornecer os detalhes do cartão, como **forma de pagamento**, **número**, **nome do titular**, **data de validade** e código de segurança (**CVC**). 
 
 # Exercício 1
-
-Primeiro, vamos analisar todo o código que vocês estão recebendo.
-
-Você **não precisa responder às questões abaixo dentro de seu projeto**, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
-
-- Observe o `App.js`, o que você consegue visualizar que já conhece? 
-- Entende o `<GlobalStyles/>`?
-- Analize os componentes dentro do App.js, quantos e quais componentes estão sendo chamados aqui?
-- Agora analize o `JSX` de cada um desses componentes.
-- Você vai perceber que o componente `MainPage` é o componente principal do projeto. É lá onde está armazenado os componentes `NameForm` e `ConfirmationForm`. 
-- Agora analize o componente `NameForm`. Aqui você deverá concluir o controle dos inputs.
-- O componente `ConfirmationForm` está incompleto. Seu trabalho será criar os estados e funções onChange na `MainPage`, passar o que for necessário por props para esse componente e administrar o controle dos inputs.
+Crie um input para cada informação do cartão: forma de pagamento, nome da pessoa, número do cartão, data de validade e CVC.
 
 
 # Exercício 2
-
-## **A aplicação estará quebrada antes de implementar esse exercício! Não se preocupe, o exercício foi criado assim mesmo!**
-
-Agora vamos incrementar o formulário que trabalhamos em aula, que agora é o componente `NameForm`.
-Ele é uma versão componentizada do exercício da aula ao vivo. Perceba que as props já foram passadas pra esse componente, você terá apenas que passar os valores corretamente para os inputs (`value` e `onChange`).
+Faça o input controlado de cada informação do cartão.
 
 
 # Exercício 3
-
-Agora que os requisitos da etapa anterior foram atendidos, você precisa controlar os inputs do próximo formulário do zero.  
-
-- Crie os estados dataNascimento, telefone e cidade.
-- Crie funções onChange para cada um dos 3 estados criados.
-- Passe os estados e funções por props para o componente `ConfirmationForm`.
-- Abra o componente `ConfirmationForm.js`.
-- Aplique os valores recebidos por props para cada input (`value`e `onChange`).
-- Agora você pode testar a aplicação até o final e verificar os dados que foram capturados pelos inputs controlados nos 2 formulários! 😀
+Crie a função que será executada após o clique do botão. A função deve limpar os inputs e exibir um alerta com a mensagem "Seu cartão foi cadastrado com sucesso!". Remova o comportamento padrão do formulário.
